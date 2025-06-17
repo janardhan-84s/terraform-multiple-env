@@ -37,7 +37,7 @@ resource "aws_security_group" "allow_all" {
   tags = merge(
     var.common_tags,
     {
-      Name = "${var.project}-${var.sg_name}-${var.environment}"
+      Name = "${var.project}-${var.sg_name}-${var.environment}" # interpolation
     }
   )
 }

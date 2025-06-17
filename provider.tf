@@ -8,7 +8,8 @@ terraform {
   }
 
   backend "s3" {
-    
+    # this mean you can give name in prompt
+      region= "us-east-1"
   }
 }
 
